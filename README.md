@@ -23,7 +23,11 @@ Write, preview, and manage Markdown files with a GitHub-style theme that automat
 
 ## Screenshots
 
-*TODO: add screenshots*
+**Split View — dark theme**
+![Split View dark](screenshots/split-view-dark.png)
+
+**Preview — light theme**
+![Preview light](screenshots/preview-light.png)
 
 ---
 
