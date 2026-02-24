@@ -351,6 +351,13 @@ class BalkanMDViewer(QMainWindow):
         # ===== POMOĆ MENI =====
         help_menu = menubar.addMenu(_t("menu_help"))
 
+        doc_action = QAction(_t("documentation"), self)
+        doc_action.setShortcut("F1")
+        doc_action.triggered.connect(self.show_documentation)
+        help_menu.addAction(doc_action)
+
+        help_menu.addSeparator()
+
         about_action = QAction(_t("about"), self)
         about_action.triggered.connect(self.show_about)
         help_menu.addAction(about_action)
@@ -1540,6 +1547,19 @@ class BalkanMDViewer(QMainWindow):
                 self.ucitaj_fajl(putanja)
                 event.acceptProposedAction()
                 return
+
+    # ===== DOCUMENTATION =====
+
+    def show_documentation(self):
+        """Otvara documentation.md u pregledaču"""
+        doc_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documentation.md")
+        if os.path.isfile(doc_path):
+            self.ucitaj_fajl(doc_path)
+        else:
+            QMessageBox.warning(
+                self, _t("dlg_warning"),
+                "documentation.md not found."
+            )
 
     # ===== ABOUT =====
 

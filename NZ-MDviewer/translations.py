@@ -31,6 +31,7 @@ TRANSLATIONS: dict = {
         "sidebar_menu":      "Sidebar",
         "preferences":       "Preferences",
         # Help menu
+        "documentation":     "Documentation",
         "about":             "About",
         # Toolbar buttons
         "btn_back":          "◀ Back",
@@ -201,6 +202,7 @@ TRANSLATIONS: dict = {
         "sidebar_menu":      "Sidebar",
         "preferences":       "Postavke",
         # Help menu
+        "documentation":     "Dokumentacija",
         "about":             "O programu",
         # Toolbar buttons
         "btn_back":          "◀ Nazad",
