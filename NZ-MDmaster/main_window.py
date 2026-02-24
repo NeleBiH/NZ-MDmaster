@@ -1,5 +1,5 @@
 """
-Main window for NZ-MDviewer.
+Main window for NZ-MDmaster.
 BalkanMDViewer class + main() entry point.
 """
 import sys
@@ -1565,7 +1565,7 @@ class BalkanMDViewer(QMainWindow):
 
     def show_about(self):
         """Shows the About dialog."""
-        GITHUB_URL = "https://github.com/yourusername/NZ-MDviewer"
+        GITHUB_URL = "https://github.com/NeleBiH/NZ-MDmaster"
 
         dialog = QDialog(self)
         dialog.setWindowTitle(_t("about_title"))
@@ -1596,7 +1596,7 @@ class BalkanMDViewer(QMainWindow):
         header = QHBoxLayout()
         header.setSpacing(14)
 
-        icon_path = Path(__file__).parent / "icons" / "nzmdviewer_64.png"
+        icon_path = Path(__file__).parent / "icons" / "nzmdmaster_64.png"
         if icon_path.exists():
             icon_label = QLabel()
             icon_label.setPixmap(QPixmap(str(icon_path)).scaled(
@@ -1927,7 +1927,7 @@ def main():
     app.setApplicationVersion(VERSION)
 
     # Set application icon
-    icon_path = Path(__file__).parent / "icons" / "nzmdviewer_256.png"
+    icon_path = Path(__file__).parent / "icons" / "nzmdmaster_256.png"
     if icon_path.exists():
         app.setWindowIcon(QIcon(str(icon_path)))
 

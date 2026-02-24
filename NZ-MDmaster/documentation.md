@@ -1,4 +1,4 @@
-# NZ-MDviewer — Documentation
+# NZ-MDmaster — Documentation
 
 > **Version 0.3.0** · Desktop Markdown Editor & Viewer for Linux
 
@@ -25,7 +25,7 @@
 
 ## Introduction
 
-**NZ-MDviewer** is a desktop Markdown editor and viewer for Linux. It renders Markdown files with a GitHub-style theme that automatically follows your system's light or dark mode, and includes a built-in syntax-highlighted editor with live preview.
+**NZ-MDmaster** is a desktop Markdown editor and viewer for Linux. It renders Markdown files with a GitHub-style theme that automatically follows your system's light or dark mode, and includes a built-in syntax-highlighted editor with live preview.
 
 ### Key features at a glance
 
@@ -57,8 +57,8 @@ Python packages (`markdown`, `pymdown-extensions`, `pygments`) are installed aut
 ### Install
 
 ```bash
-git clone https://github.com/NeleBiH/NZ-MDviewer.git
-cd NZ-MDviewer
+git clone https://github.com/NeleBiH/NZ-MDmaster.git
+cd NZ-MDmaster
 chmod +x install_uninstall.sh
 ./install_uninstall.sh --install
 ```
@@ -81,19 +81,19 @@ Settings are preserved across updates.
 
 ## Getting Started
 
-After installation, launch NZ-MDviewer from your app menu or terminal:
+After installation, launch NZ-MDmaster from your app menu or terminal:
 
 ```bash
 # Open the file browser
-nzmdviewer
+nzmdmaster
 
 # Open a specific file directly
-nzmdviewer /path/to/file.md
+nzmdmaster /path/to/file.md
 ```
 
 You can also:
 - **Double-click** a `.md` file in your file manager (Dolphin, Nautilus, Thunar)
-- **Right-click → Open With → NZ-MDviewer**
+- **Right-click → Open With → NZ-MDmaster**
 - **Drag and drop** a `.md` or `.txt` file onto the app window
 
 ---
@@ -129,7 +129,7 @@ The default zoom level can be set in **Settings → Preview → Default Zoom**.
 
 ### Auto-Reload
 
-When another application modifies the currently open file, NZ-MDviewer detects the change and reloads automatically (with 300ms debounce). This can be toggled in **Settings → Preview → Auto-Reload**.
+When another application modifies the currently open file, NZ-MDmaster detects the change and reloads automatically (with 300ms debounce). This can be toggled in **Settings → Preview → Auto-Reload**.
 
 Press **F5** or **View → Reload** to reload manually at any time.
 
@@ -239,7 +239,7 @@ The PDF is generated from the rendered HTML (with the current theme and zoom lev
 
 ## Navigation History
 
-NZ-MDviewer tracks which files you've opened and lets you navigate between them like a web browser.
+NZ-MDmaster tracks which files you've opened and lets you navigate between them like a web browser.
 
 | Action | Shortcut |
 |--------|----------|
@@ -275,7 +275,7 @@ Switch between **English** and **Bosanski / Hrvatski / Srpski**. Language change
 
 Settings are stored at:
 ```
-~/.local/share/nzmdviewer/settings.json
+~/.local/share/nzmdmaster/settings.json
 ```
 
 ---
@@ -313,7 +313,7 @@ Settings are stored at:
 
 ## Markdown Syntax Reference
 
-A quick reference for the Markdown features supported by NZ-MDviewer.
+A quick reference for the Markdown features supported by NZ-MDmaster.
 
 ### Text Formatting
 
@@ -421,8 +421,8 @@ Here is a footnote reference.[^1]
 
 **Fix:**
 ```bash
-rm -rf ~/.local/share/nzmdviewer/venv
-~/.local/share/nzmdviewer/install_uninstall.sh --update
+rm -rf ~/.local/share/nzmdmaster/venv
+~/.local/share/nzmdmaster/install_uninstall.sh --update
 ```
 
 ### PySide6-WebEngine not available (Python 3.14+)
@@ -431,8 +431,8 @@ PySide6-WebEngine from pip doesn't support Python 3.14+.
 
 **Fix:** Use `--system-site-packages` to inherit the system PySide6:
 ```bash
-python3 -m venv --system-site-packages ~/.local/share/nzmdviewer/venv
-~/.local/share/nzmdviewer/venv/bin/pip install markdown pymdown-extensions pygments
+python3 -m venv --system-site-packages ~/.local/share/nzmdmaster/venv
+~/.local/share/nzmdmaster/venv/bin/pip install markdown pymdown-extensions pygments
 ```
 
 **Arch/CachyOS:**
@@ -444,8 +444,8 @@ sudo pacman -S pyside6 qt6-webengine
 
 ```bash
 update-desktop-database ~/.local/share/applications/
-xdg-mime default nzmdviewer.desktop text/markdown
-xdg-mime default nzmdviewer.desktop text/x-markdown
+xdg-mime default nzmdmaster.desktop text/markdown
+xdg-mime default nzmdmaster.desktop text/x-markdown
 ```
 
 You may need to re-login or restart your file manager.
@@ -454,7 +454,7 @@ You may need to re-login or restart your file manager.
 
 Run from terminal to see the error:
 ```bash
-nzmdviewer /path/to/file.md
+nzmdmaster /path/to/file.md
 ```
 
 ### Preview doesn't render (blank white page)
@@ -468,4 +468,4 @@ If it fails, install `qt6-webengine` (`sudo pacman -S qt6-webengine` on Arch).
 
 ---
 
-*NZ-MDviewer · Developed by Nele + Claude AI · MIT License*
+*NZ-MDmaster · Developed by Nele + Claude AI · MIT License*

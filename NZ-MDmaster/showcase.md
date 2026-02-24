@@ -1,6 +1,6 @@
-# NZ-MDviewer — Markdown Showcase
+# NZ-MDmaster — Markdown Showcase
 
-> **NOTE:** This file demonstrates ALL features supported by NZ-MDviewer.
+> **NOTE:** This file demonstrates ALL features supported by NZ-MDmaster.
 > Open it in the app and check that everything renders correctly.
 
 [TOC]
@@ -245,7 +245,7 @@ class EventEmitter {
 
 set -euo pipefail
 
-APP_NAME="NZ-MDviewer"
+APP_NAME="NZ-MDmaster"
 VERSION="0.3.0"
 INSTALL_DIR="$HOME/.local/bin"
 
@@ -280,7 +280,7 @@ echo "✅ Installation complete!"
 
 ```json
 {
-    "application": "NZ-MDviewer",
+    "application": "NZ-MDmaster",
     "version": "0.3.0",
     "author": "Nele",
     "dependencies": {
@@ -312,7 +312,7 @@ echo "✅ Installation complete!"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NZ-MDviewer Showcase</title>
+    <title>NZ-MDmaster Showcase</title>
     <style>
         body {
             background: #0d1117;
@@ -329,7 +329,7 @@ echo "✅ Installation complete!"
 <body>
     <div class="container">
         <h1>Showcase Page</h1>
-        <p>This HTML was exported from <strong>NZ-MDviewer</strong>.</p>
+        <p>This HTML was exported from <strong>NZ-MDmaster</strong>.</p>
     </div>
 </body>
 </html>
@@ -371,9 +371,9 @@ LIMIT 10;
 **YAML:**
 
 ```yaml
-# NZ-MDviewer configuration
+# NZ-MDmaster configuration
 app:
-  name: NZ-MDviewer
+  name: NZ-MDmaster
   version: 0.3.0
   debug: false
 
@@ -436,7 +436,7 @@ impl Config {
 }
 
 fn main() {
-    let mut config = Config::new("NZ-MDviewer", "0.3.0");
+    let mut config = Config::new("NZ-MDmaster", "0.3.0");
     config.add_setting("theme", "github-auto");
     config.add_setting("font", "Fira Code");
 
@@ -519,7 +519,7 @@ This is text with a [reference link][ref1] and another [link][ref2].
 
 ### 8.3 Auto-links (MagicLink)
 
-Direct URL: https://github.com/NeleBiH/NZ-MDviewer
+Direct URL: https://github.com/NeleBiH/NZ-MDmaster
 
 Email address: example@example.com
 
@@ -543,11 +543,11 @@ Email address: example@example.com
 
 ### 9.2 Image with Alt Text and Title
 
-![Placeholder image](https://via.placeholder.com/400x200/161b22/58a6ff?text=NZ-MDviewer+Showcase "Hover title here")
+![Placeholder image](https://via.placeholder.com/400x200/161b22/58a6ff?text=NZ-MDmaster+Showcase "Hover title here")
 
 ### 9.3 Image as Link
 
-[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/NeleBiH/NZ-MDviewer)
+[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/NeleBiH/NZ-MDmaster)
 
 ---
 
@@ -609,7 +609,7 @@ Markdown
 :   A lightweight markup language used for formatting text.
 :   Created by John Gruber in 2004.
 
-NZ-MDviewer
+NZ-MDmaster
 :   A desktop application for viewing and editing Markdown files.
 :   Written in Python with the PySide6 framework.
 :   Uses a GitHub-style theme with automatic light/dark mode.
@@ -641,7 +641,7 @@ The app is built with the QT framework.
 
 ## 14. Keyboard Keys
 
-Shortcuts in NZ-MDviewer:
+Shortcuts in NZ-MDmaster:
 
 - ++ctrl+o++ to open a file
 - ++ctrl+e++ to toggle Edit/Preview mode
@@ -707,7 +707,7 @@ echo "Even code blocks!"
 
 En dash: exchange rate is 1.95--2.00
 
-Em dash: NZ-MDviewer---the best MD viewer
+Em dash: NZ-MDmaster---the best MD viewer
 
 ### 16.3 Unicode and Emoji
 
@@ -802,9 +802,9 @@ pip install markdown pymdown-extensions pygments
 Run the app:
 
 ```bash
-python3 NZ-MDviewer/NZ-MDviewer.py
+python3 NZ-MDmaster/NZ-MDmaster.py
 # or open a specific file
-python3 NZ-MDviewer/NZ-MDviewer.py /path/to/file.md
+python3 NZ-MDmaster/NZ-MDmaster.py /path/to/file.md
 ```
 
 ### 18.5 Math Examples with Formatting
@@ -1004,7 +1004,7 @@ func main() {
 
 Use the search field in the toolbar (🔍) to search:
 
-- Search: `NZ-MDviewer` — should find many results
+- Search: `NZ-MDmaster` — should find many results
 - Search: `admonition` — should find it in section 11
 - Search: `xyz_does_not_exist` — should show "not found" message
 - Search: `python` — should find in code blocks (case insensitive)
@@ -1061,6 +1061,6 @@ Right-click on the preview area — the menu should show:
 
 ---
 
-*NZ-MDviewer v0.3.0 — Showcase file for complete feature testing* 🚀
+*NZ-MDmaster v0.3.0 — Showcase file for complete feature testing* 🚀
 
 *Built with ☕ and Python*

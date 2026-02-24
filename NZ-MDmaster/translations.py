@@ -104,7 +104,7 @@ TRANSLATIONS: dict = {
         "insert_link_url":   "URL:",
         "insert_img_url":    "Image URL or path:",
         # Settings dialog
-        "settings_title":    "Settings - NZ-MDviewer",
+        "settings_title":    "Settings - NZ-MDmaster",
         "settings_lang_group":   "🌐 Language",
         "settings_lang_label":   "Interface language:",
         "settings_lang_note":    "Language change requires restart",
@@ -118,7 +118,7 @@ TRANSLATIONS: dict = {
         "settings_save":         "💾 Save",
         "settings_cancel":       "❌ Cancel",
         # About dialog
-        "about_title":       "About NZ-MDviewer",
+        "about_title":       "About NZ-MDmaster",
         "about_body": (
             "<p>Markdown viewer with system theme support.</p>"
             "<p><b>Features:</b></p>"
@@ -154,7 +154,7 @@ TRANSLATIONS: dict = {
         "spec_emoji":   "Emoji",
         # Welcome screen (Markdown text)
         "welcome": (
-            "# 👋 Welcome to NZ-MDviewer!\n\n"
+            "# 👋 Welcome to NZ-MDmaster!\n\n"
             "## How to use:\n\n"
             "1. **Select folder** on the left (or `File → Change Folder`)\n"
             "2. **Click a .md file** to preview it\n"
@@ -175,7 +175,7 @@ TRANSLATIONS: dict = {
             "| Reset Zoom | `Ctrl+0` |\n"
             "| Quit | `Ctrl+Q` |\n\n"
             "---\n\n"
-            "*NZ-MDviewer v{version}*\n"
+            "*NZ-MDmaster v{version}*\n"
         ),
     },
     "bs": {
@@ -275,7 +275,7 @@ TRANSLATIONS: dict = {
         "insert_link_url":   "URL:",
         "insert_img_url":    "Image URL ili putanja:",
         # Settings dialog
-        "settings_title":    "Postavke - NZ-MDviewer",
+        "settings_title":    "Postavke - NZ-MDmaster",
         "settings_lang_group":   "🌐 Jezik / Language",
         "settings_lang_label":   "Interface jezik:",
         "settings_lang_note":    "Promjena jezika zahtijeva restart",
@@ -289,7 +289,7 @@ TRANSLATIONS: dict = {
         "settings_save":         "💾 Sačuvaj",
         "settings_cancel":       "❌ Odustani",
         # About dialog
-        "about_title":       "O programu NZ-MDviewer",
+        "about_title":       "O programu NZ-MDmaster",
         "about_body": (
             "<p>Markdown viewer sa podrškom za sistemsku temu.</p>"
             "<p><b>Funkcije:</b></p>"
@@ -325,7 +325,7 @@ TRANSLATIONS: dict = {
         "spec_emoji":   "Emoji",
         # Welcome screen
         "welcome": (
-            "# 👋 Dobrodošao u NZ-MDviewer!\n\n"
+            "# 👋 Dobrodošao u NZ-MDmaster!\n\n"
             "## Kako koristiti:\n\n"
             "1. **Izaberi folder** sa lijeve strane (ili `Fajl → Promijeni Folder`)\n"
             "2. **Klikni na .md fajl** da ga pregledaš\n"
@@ -346,7 +346,7 @@ TRANSLATIONS: dict = {
             "| Reset Zoom | `Ctrl+0` |\n"
             "| Izlaz | `Ctrl+Q` |\n\n"
             "---\n\n"
-            "*NZ-MDviewer v{version}*\n"
+            "*NZ-MDmaster v{version}*\n"
         ),
     },
 }

@@ -1,4 +1,4 @@
-# NZ-MDviewer
+# NZ-MDmaster
 
 A desktop Markdown editor and viewer for Linux, built with Python and PySide6.
 
@@ -49,16 +49,16 @@ sudo apt install python3-pyside6.qtwebenginewidgets python3-pyside6.qtwebengine
 ## Installation
 
 ```bash
-git clone https://github.com/NeleBiH/NZ-MDviewer.git
-cd NZ-MDviewer
+git clone https://github.com/NeleBiH/NZ-MDmaster.git
+cd NZ-MDmaster
 chmod +x install_uninstall.sh
 ./install_uninstall.sh --install
 ```
 
 The installer:
-- Creates a venv at `~/.local/share/nzmdviewer/venv/`
+- Creates a venv at `~/.local/share/nzmdmaster/venv/`
 - Installs pip dependencies
-- Creates `~/.local/bin/nzmdviewer` launcher
+- Creates `~/.local/bin/nzmdmaster` launcher
 - Registers MIME types for `.md` files
 - Adds a `.desktop` entry (shows in app menu and file manager "Open With")
 - Installs icons to the hicolor theme
@@ -69,7 +69,7 @@ The installer:
 ./install_uninstall.sh --update
 ```
 
-Settings (`~/.local/share/nzmdviewer/settings.json`) are preserved across updates.
+Settings (`~/.local/share/nzmdmaster/settings.json`) are preserved across updates.
 
 ### Uninstall
 
@@ -83,10 +83,10 @@ Settings (`~/.local/share/nzmdviewer/settings.json`) are preserved across update
 
 ```bash
 # Open file browser
-nzmdviewer
+nzmdmaster
 
 # Open a specific file
-nzmdviewer /path/to/file.md
+nzmdmaster /path/to/file.md
 ```
 
 Or open `.md` files directly from your file manager (Dolphin, Nautilus, etc.).
@@ -113,8 +113,8 @@ Or open `.md` files directly from your file manager (Dolphin, Nautilus, etc.).
 ## Project Structure
 
 ```
-NZ-MDviewer/
-├── NZ-MDviewer.py     # Entry point
+NZ-MDmaster/
+├── NZ-MDmaster.py     # Entry point
 ├── __init__.py         # VERSION, APP_NAME
 ├── deps.py             # Dependency check
 ├── translations.py     # i18n (en, bs)
@@ -122,7 +122,7 @@ NZ-MDviewer/
 ├── editor.py           # Editor widget with line numbers
 ├── web.py              # Custom WebEngine page + slide animation container
 ├── styles.py           # CSS (GitHub Light/Dark, @media prefers-color-scheme)
-├── settings_mgr.py     # Settings load/save (~/.local/share/nzmdviewer/settings.json)
+├── settings_mgr.py     # Settings load/save (~/.local/share/nzmdmaster/settings.json)
 ├── main_window.py      # Main window
 └── icons/              # App icons (16–512px PNG + SVG)
 ```
@@ -134,7 +134,7 @@ NZ-MDviewer/
 Run directly without installing:
 
 ```bash
-python3 NZ-MDviewer/NZ-MDviewer.py
+python3 NZ-MDmaster/NZ-MDmaster.py
 ```
 
 See [dev_log.md](dev_log.md) for full changelog, architecture notes, and known issues.
